@@ -194,8 +194,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.freedesktop.org/NetworkManager/NetworkManager.git",
-                    "tag": "1.26.0",
-                    "commit": "8582a5f356b758b9fc44f977fbad10132fcbd926"
+                    "tag": "1.26.2",
+                    "commit": "c3c6c426dfca621fa71dceacbba2789b9f8ce144"
                 }
             ]
         },
@@ -231,8 +231,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.freedesktop.org/pipewire/pipewire.git",
-                    "tag": "0.3.9",
-                    "commit": "db12f47505ddccb257acdc0fa2bb884aceb1b593"
+                    "tag": "0.3.10",
+                    "commit": "69be14186e20ffaa42c4a635be5da49173c45b97"
                 }
             ]
         },
@@ -246,7 +246,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/gnome-network-displays.git",
-                    "commit": "9aa91ea2462df369c4796b4eab73c30b02d2574b"
+                    "commit": "18db137307312cd89c8cdaeb787e097e0fa504e0"
                 },
                 {
                     "type": "patch",
