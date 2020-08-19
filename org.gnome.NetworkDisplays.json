@@ -231,8 +231,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.freedesktop.org/pipewire/pipewire.git",
-                    "tag": "0.3.9",
-                    "commit": "db12f47505ddccb257acdc0fa2bb884aceb1b593"
+                    "tag": "0.3.10",
+                    "commit": "69be14186e20ffaa42c4a635be5da49173c45b97"
                 }
             ]
         },
