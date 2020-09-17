@@ -143,9 +143,10 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://github.com/firewalld/firewalld/archive/v0.8.3.tar.gz",
-                    "sha256": "f53443d186d7951e6282c966326739b006f139c64ffa83f8981cd608f6cd9705"
+                    "type": "git",
+                    "url": "https://github.com/firewalld/firewalld.git",
+                    "tag": "v0.9.0",
+                    "commit": "8d306120f7a9484ffcec902bb61b855996cd45fd"
                 }
             ]
         },
