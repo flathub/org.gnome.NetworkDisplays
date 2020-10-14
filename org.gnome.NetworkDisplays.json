@@ -140,8 +140,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/firewalld/firewalld.git",
-                    "tag": "v0.9.0",
-                    "commit": "8d306120f7a9484ffcec902bb61b855996cd45fd"
+                    "tag": "v0.9.1",
+                    "commit": "dff6df0c9c970f39fda5aac5c856b2b3dc582705"
                 }
             ]
         },
@@ -190,8 +190,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.freedesktop.org/NetworkManager/NetworkManager.git",
-                    "tag": "1.26.2",
-                    "commit": "c3c6c426dfca621fa71dceacbba2789b9f8ce144"
+                    "tag": "1.26.4",
+                    "commit": "d256565e57af6e7f707be3f0d415eb2f225c4b78"
                 }
             ]
         },
@@ -205,7 +205,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/gnome-network-displays.git",
-                    "commit": "4b9a4ed5994ac5a7417389c0d00c67e3a5c1bb93"
+                    "commit": "3234c20f480d17c7d3bf514e17a1b8eaef0f4534"
                 },
                 {
                     "type": "patch",
