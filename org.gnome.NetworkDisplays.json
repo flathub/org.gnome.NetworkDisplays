@@ -36,8 +36,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.freedesktop.org/gstreamer/gst-rtsp-server.git",
-                    "tag": "1.16.2",
-                    "commit": "279e1e7f92272cf84d8a2d6f9855d980857b06a9"
+                    "tag": "1.16.3",
+                    "commit": "78f26357161c032ea7328514caff818d27a87846"
                 }
             ]
         },
