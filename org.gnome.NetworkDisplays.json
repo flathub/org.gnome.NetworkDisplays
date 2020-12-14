@@ -190,8 +190,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.freedesktop.org/NetworkManager/NetworkManager.git",
-                    "tag": "1.26.4",
-                    "commit": "d256565e57af6e7f707be3f0d415eb2f225c4b78"
+                    "tag": "1.26.6",
+                    "commit": "2b3c34ea07b0dc2a60b50e5e82a8b233dfc5f9bd"
                 }
             ]
         },
