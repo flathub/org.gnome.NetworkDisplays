@@ -56,7 +56,12 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/gentoo/eudev/archive/v3.2.9.tar.gz",
-                    "sha256": "7d281276b480da3935d1acb239748c2c9db01a8043aad7e918ce57a223d8cd24"
+                    "sha256": "7d281276b480da3935d1acb239748c2c9db01a8043aad7e918ce57a223d8cd24",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 13466,
+                        "url-template": "https://dev.gentoo.org/~blueness/eudev/eudev-$version.tar.gz"
+                    }
                 }
             ]
         },
@@ -73,7 +78,12 @@
                     "type": "git",
                     "url": "https://github.com/jpirko/libndp.git",
                     "tag": "v1.7",
-                    "commit": "96674e7d4f4d569c2c961e865cc16152dfab5f09"
+                    "commit": "96674e7d4f4d569c2c961e865cc16152dfab5f09",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 14944,
+                        "url-template": "https://github.com/jpirko/libndp/archive/v$version.tar.gz"
+                    }
                 }
             ]
         },
@@ -141,7 +151,12 @@
                     "type": "git",
                     "url": "https://github.com/firewalld/firewalld.git",
                     "tag": "v0.9.1",
-                    "commit": "dff6df0c9c970f39fda5aac5c856b2b3dc582705"
+                    "commit": "dff6df0c9c970f39fda5aac5c856b2b3dc582705",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 9989,
+                        "url-template": "https://github.com/firewalld/firewalld/releases/download/v$version/firewalld-$version.tar.gz"
+                    }
                 }
             ]
         },
