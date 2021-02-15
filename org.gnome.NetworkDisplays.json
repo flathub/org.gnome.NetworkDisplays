@@ -34,10 +34,9 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://gitlab.freedesktop.org/gstreamer/gst-rtsp-server.git",
-                    "tag": "1.16.3",
-                    "commit": "78f26357161c032ea7328514caff818d27a87846"
+                    "type": "archive",
+                    "url": "https://gstreamer.freedesktop.org/src/gst-rtsp-server/gst-rtsp-server-1.16.3.tar.xz",
+                    "sha256": "67886b872826d513c58f88d559d4dc4aa63382d03fb64ceac91a09537fe6fea0"
                 }
             ]
         },
@@ -47,7 +46,8 @@
                 "/bin",
                 "/sbin",
                 "/include",
-                "/lib*/udev"
+                "/lib*/udev",
+                "/share/pkgconfig"
             ],
             "post-install": [
                 "udevadm hwdb --update"
@@ -71,14 +71,14 @@
             "cleanup": [
                 "/bin",
                 "/include",
-                "/lib/pkgconfig"
+                "/lib/pkgconfig",
+                "/share/man"
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://github.com/jpirko/libndp.git",
-                    "tag": "v1.7",
-                    "commit": "96674e7d4f4d569c2c961e865cc16152dfab5f09",
+                    "type": "archive",
+                    "url": "https://github.com/jpirko/libndp/archive/v1.7.tar.gz",
+                    "sha256": "44be73630ee785ed9f571f9aaaeba0e1d375fa337fd841270034c813b5b0e6fd",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 14944,
@@ -101,6 +101,7 @@
                 "--with-authdb=dummy",
                 "--with-authfw=none"
             ],
+            "rm-configure": true,
             "cleanup": [
                 "/bin/*",
                 "/etc/pam.d",
@@ -112,14 +113,18 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://gitlab.freedesktop.org/polkit/polkit.git",
-                    "tag": "0.118",
-                    "commit": "ff4c2144f0fb1325275887d9e254117fcd8a1b52"
+                    "type": "archive",
+                    "url": "https://www.freedesktop.org/software/polkit/releases/polkit-0.118.tar.gz",
+                    "sha256": "6d54e984e7072339f0d3147179e16e34e5fe0705158f259a765d772dcf78956b"
                 },
                 {
                     "type": "patch",
                     "path": "patches/polkit/polkit-build-Add-option-to-build-without-polkitd.patch"
+                },
+                {
+                    "type": "file",
+                    "path": "files/polkit/autogen.sh",
+                    "dest-filename": "autogen.sh"
                 }
             ]
         },
@@ -148,10 +153,9 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://github.com/firewalld/firewalld.git",
-                    "tag": "v0.9.1",
-                    "commit": "dff6df0c9c970f39fda5aac5c856b2b3dc582705",
+                    "type": "archive",
+                    "url": "https://github.com/firewalld/firewalld/releases/download/v0.9.1/firewalld-0.9.1.tar.gz",
+                    "sha256": "7e3db6ed84919dd10add39cc7a28d97b5a9e27a53aeb73abf8af01ef082b74f9",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 9989,
@@ -168,7 +172,7 @@
                 "cxxflags": "-ltinfo"
             },
             "config-opts": [
-                "-Dsystemdsystemunitdir=/app/lib/systemd/system",
+                "-Dsystemdsystemunitdir=no",
                 "-Ddbus_conf_dir=/app/etc/dbus-1/system.d",
                 "-Diptables=/usr/bin/true",
                 "-Ddnsmasq=/usr/bin/true",
@@ -203,10 +207,9 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://gitlab.freedesktop.org/NetworkManager/NetworkManager.git",
-                    "tag": "1.26.6",
-                    "commit": "2b3c34ea07b0dc2a60b50e5e82a8b233dfc5f9bd"
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/NetworkManager/1.26/NetworkManager-1.26.6.tar.xz",
+                    "sha256": "1637d28d8ee74f3d4b7473febc2806ca66a21069680b6645bb11a192653e9603"
                 }
             ]
         },
@@ -220,7 +223,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/gnome-network-displays.git",
-                    "commit": "c87e95d4dbb69830b0f22372b5f24b6800e83e42"
+                    "commit": "9d581c51a52c767f9ea75d7c99fada30937247bc"
                 },
                 {
                     "type": "patch",
