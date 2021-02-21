@@ -197,7 +197,6 @@
                 "-Ddocs=false",
                 "-Dtests=no",
                 "-Dfirewalld_zone=false",
-                "-Djson_validation=false",
                 "-Dlibpsl=false",
                 "-Dqt=false"
             ],
@@ -212,9 +211,14 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/NetworkManager/1.26/NetworkManager-1.26.6.tar.xz",
-                    "sha256": "1637d28d8ee74f3d4b7473febc2806ca66a21069680b6645bb11a192653e9603"
+                    "type": "git",
+                    "url": "https://gitlab.freedesktop.org/NetworkManager/NetworkManager.git",
+                    "tag": "1.30.0",
+                    "commit": "fc29a96097e0f11ab963c27036b6b8b3e1f3d42b",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
+                    }
                 }
             ]
         },
