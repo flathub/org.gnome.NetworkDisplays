@@ -11,6 +11,7 @@
         "--socket=wayland",
         "--socket=fallback-x11",
         "--filesystem=xdg-run/gvfs",
+        "--filesystem=xdg-run/gvfsd",
         "--talk-name=org.gtk.vfs",
         "--talk-name=org.gtk.vfs.*",
         "--talk-name=org.a11y.Bus",
