@@ -115,8 +115,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.freedesktop.org/software/polkit/releases/polkit-0.118.tar.gz",
-                    "sha256": "6d54e984e7072339f0d3147179e16e34e5fe0705158f259a765d772dcf78956b",
+                    "url": "https://www.freedesktop.org/software/polkit/releases/polkit-0.119.tar.gz",
+                    "sha256": "c8579fdb86e94295404211285fee0722ad04893f0213e571bd75c00972fd1f5c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 3682,
