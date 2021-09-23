@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.NetworkDisplays",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "40",
+    "runtime-version": "41",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-network-displays",
     "finish-args": [
@@ -36,8 +36,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gstreamer.freedesktop.org/src/gst-rtsp-server/gst-rtsp-server-1.16.3.tar.xz",
-                    "sha256": "67886b872826d513c58f88d559d4dc4aa63382d03fb64ceac91a09537fe6fea0"
+                    "url": "https://gstreamer.freedesktop.org/src/gst-rtsp-server/gst-rtsp-server-1.18.5.tar.xz",
+                    "sha256": "04d63bf48816c6f41c73f6de0f912a7cef0aab39c44162a7bcece1923dfc9d1f",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://gitlab.freedesktop.org/api/v4/projects/1362/repository/tags?search=^1.18.",
+                        "version-query": ".[0].name",
+                        "url-query": "\"https://gstreamer.freedesktop.org/src/gst-rtsp-server/gst-rtsp-server-\" + $version + \".tar.xz\""
+                    }
                 }
             ]
         },
