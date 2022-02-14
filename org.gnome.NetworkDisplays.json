@@ -239,7 +239,7 @@
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/gnome-network-displays.git",
                     "branch": "master",
-                    "commit": "33a80123a1c3aa0de02b952262231d320f47216f"
+                    "commit": "589d979f33b4873f9e5a5234e505566b420efdfe"
                 },
                 {
                     "type": "patch",
