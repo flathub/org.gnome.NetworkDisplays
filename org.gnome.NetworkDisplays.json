@@ -66,7 +66,8 @@
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13466,
-                        "url-template": "https://dev.gentoo.org/~blueness/eudev/eudev-$version.tar.gz"
+                        "stable-only": true,
+                        "url-template": "https://github.com/eudev-project/eudev/releases/download/v$version/eudev-$version.tar.gz"
                     }
                 }
             ]
@@ -88,6 +89,7 @@
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 14944,
+                        "stable-only": true,
                         "url-template": "https://github.com/jpirko/libndp/archive/v$version.tar.gz"
                     }
                 }
@@ -125,6 +127,7 @@
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 3682,
+                        "stable-only": true,
                         "url-template": "https://www.freedesktop.org/software/polkit/releases/polkit-$version.tar.gz"
                     }
                 },
@@ -170,6 +173,7 @@
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 9989,
+                        "stable-only": true,
                         "url-template": "https://github.com/firewalld/firewalld/releases/download/v$version/firewalld-$version.tar.gz"
                     }
                 }
