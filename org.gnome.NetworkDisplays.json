@@ -168,8 +168,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/firewalld/firewalld/releases/download/v1.0.1/firewalld-1.0.1.tar.gz",
-                    "sha256": "35a89949e527cd7fc863574b2eceb80f99092cca838c79c4c1fce2228a01eb09",
+                    "url": "https://github.com/firewalld/firewalld/releases/download/v1.1.0/firewalld-1.1.0.tar.gz",
+                    "sha256": "ffab4bbe30d829e3a6a6a029ac4a6307073785c301368b3d8a7f523876037ff9",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 9989,
