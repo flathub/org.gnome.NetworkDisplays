@@ -144,6 +144,12 @@
         },
         {
             "name": "firewalld",
+            "build-options": {
+                "env": {
+                    "PYTHON_PREFIX": "/app",
+                    "PYTHON_EXEC_PREFIX": "/app"
+                }
+            },
             "config-opts": [
                 "--disable-schemas-compile",
                 "--disable-docs",
