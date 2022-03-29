@@ -168,8 +168,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/firewalld/firewalld/releases/download/v1.0.1/firewalld-1.0.1.tar.gz",
-                    "sha256": "35a89949e527cd7fc863574b2eceb80f99092cca838c79c4c1fce2228a01eb09",
+                    "url": "https://github.com/firewalld/firewalld/releases/download/v1.1.0/firewalld-1.1.0.tar.gz",
+                    "sha256": "ffab4bbe30d829e3a6a6a029ac4a6307073785c301368b3d8a7f523876037ff9",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 9989,
@@ -223,8 +223,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.freedesktop.org/NetworkManager/NetworkManager.git",
-                    "tag": "1.36.2",
-                    "commit": "ae06ec5207cec126ca767020238c32598b8bfc5d",
+                    "tag": "1.36.4",
+                    "commit": "4e8e5bdfc2ab6b51b9f8626512089a1f0c94cce6",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
@@ -243,7 +243,7 @@
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/gnome-network-displays.git",
                     "branch": "master",
-                    "commit": "589d979f33b4873f9e5a5234e505566b420efdfe"
+                    "commit": "4fb4dd65e48a87cc7647901242e69aa0ab5205d5"
                 },
                 {
                     "type": "patch",
