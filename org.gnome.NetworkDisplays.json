@@ -168,8 +168,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/firewalld/firewalld/releases/download/v1.0.1/firewalld-1.0.1.tar.gz",
-                    "sha256": "35a89949e527cd7fc863574b2eceb80f99092cca838c79c4c1fce2228a01eb09",
+                    "url": "https://github.com/firewalld/firewalld/releases/download/v1.1.0/firewalld-1.1.0.tar.gz",
+                    "sha256": "ffab4bbe30d829e3a6a6a029ac4a6307073785c301368b3d8a7f523876037ff9",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 9989,
@@ -243,7 +243,7 @@
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/gnome-network-displays.git",
                     "branch": "master",
-                    "commit": "4fb4dd65e48a87cc7647901242e69aa0ab5205d5"
+                    "commit": "c33a449d260eda2a4553f735619bd4bd82a37f79"
                 },
                 {
                     "type": "patch",
