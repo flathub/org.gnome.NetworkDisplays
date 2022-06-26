@@ -173,10 +173,10 @@
                     "url": "https://github.com/firewalld/firewalld/releases/download/v1.1.0/firewalld-1.1.0.tar.gz",
                     "sha256": "ffab4bbe30d829e3a6a6a029ac4a6307073785c301368b3d8a7f523876037ff9",
                     "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 9989,
-                        "stable-only": true,
-                        "url-template": "https://github.com/firewalld/firewalld/releases/download/v$version/firewalld-$version.tar.gz"
+                        "type": "json",
+                        "url": "https://api.github.com/repos/firewalld/firewalld/releases/latest",
+                        "version-query": ".tag_name | sub(\"^v\"; \"\")",
+                        "url-query": ".assets[] | select(.name==\"firewalld-\" + $version + \".tar.gz\") | .browser_download_url"
                     }
                 }
             ]
