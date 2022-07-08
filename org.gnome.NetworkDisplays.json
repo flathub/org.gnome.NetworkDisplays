@@ -260,12 +260,12 @@
             ],
             "config-opts": [
                 "--with-distro=none",
-                "--disable-gobject",
                 "--disable-introspection",
                 "--disable-qt3",
                 "--disable-qt4",
                 "--disable-qt5",
                 "--disable-gtk",
+                "--disable-gtk3",
                 "--disable-core-docs",
                 "--disable-manpages",
                 "--disable-libdaemon",
