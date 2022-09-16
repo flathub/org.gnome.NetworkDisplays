@@ -123,8 +123,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.freedesktop.org/software/polkit/releases/polkit-0.120.tar.gz",
-                    "sha256": "ee7a599a853117bf273548725719fa92fabd2f136915c7a4906cee98567aee03",
+                    "url": "https://www.freedesktop.org/software/polkit/releases/polkit-121.tar.gz",
+                    "sha256": "9dc7ae341a797c994a5a36da21963f0c5c8e3e5a1780ccc2a5f52e7be01affaa",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 3682,
@@ -226,8 +226,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.freedesktop.org/NetworkManager/NetworkManager.git",
-                    "tag": "1.38.4",
-                    "commit": "89f351d4534fd9d88dc07c7d23bb254145a93178",
+                    "tag": "1.40.0",
+                    "commit": "5d4802f7d869e2a91192dc75bf33cff892a3facf",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
@@ -305,7 +305,7 @@
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/gnome-network-displays.git",
                     "branch": "master",
-                    "commit": "bccbdc0d3b7b293a59d7fde2c4413c16b1c910ac"
+                    "commit": "14904007f40a5384f77b227ed44fbc0cc8a64c45"
                 },
                 {
                     "type": "patch",
