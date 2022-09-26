@@ -124,13 +124,7 @@
                 {
                     "type": "archive",
                     "url": "https://www.freedesktop.org/software/polkit/releases/polkit-0.120.tar.gz",
-                    "sha256": "ee7a599a853117bf273548725719fa92fabd2f136915c7a4906cee98567aee03",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 3682,
-                        "stable-only": true,
-                        "url-template": "https://www.freedesktop.org/software/polkit/releases/polkit-$version.tar.gz"
-                    }
+                    "sha256": "ee7a599a853117bf273548725719fa92fabd2f136915c7a4906cee98567aee03"
                 },
                 {
                     "type": "patch",
