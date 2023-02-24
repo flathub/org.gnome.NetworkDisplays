@@ -35,8 +35,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gstreamer.freedesktop.org/src/gst-rtsp-server/gst-rtsp-server-1.20.5.tar.xz",
-                    "sha256": "ba398a7ddd559cce56ef4b91f448d174e0dccad98a493563d2d59c41a2ef39c5",
+                    "url": "https://gstreamer.freedesktop.org/src/gst-rtsp-server/gst-rtsp-server-1.20.6.tar.xz",
+                    "sha256": "800122a798387bd4b18b558737d30a010d94154f41bd210d4c4cc2d80ecae90f",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.freedesktop.org/api/v4/projects/1357/repository/tags?search=^1.20.",
