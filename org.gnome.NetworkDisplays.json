@@ -170,7 +170,7 @@
                         "type": "json",
                         "url": "https://api.github.com/repos/firewalld/firewalld/releases/latest",
                         "version-query": ".tag_name | sub(\"^v\"; \"\")",
-                        "url-query": ".assets[] | select(.name==\"firewalld-\" + $version + \".tar.gz\") | .browser_download_url"
+                        "url-query": ".assets[] | select(.name==\"firewalld-\" + $version + \".tar.bz2\") | .browser_download_url"
                     }
                 }
             ]
