@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.NetworkDisplays",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "43",
+    "runtime-version": "44",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-network-displays",
     "finish-args": [
@@ -19,6 +19,29 @@
     ],
     "modules": [
         "shared-modules/intltool/intltool-0.51.json",
+        {
+            "name": "libprotobuf-c",
+            "config-opts": [
+                "--disable-protoc"
+            ],
+            "cleanup": [
+                "/include",
+                "/lib/pkgconfig"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/protobuf-c/protobuf-c/releases/download/v1.4.1/protobuf-c-1.4.1.tar.gz",
+                    "sha256": "4cc4facd508172f3e0a4d3a8736225d472418aee35b4ad053384b137b220339f",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/protobuf-c/protobuf-c/releases/latest",
+                        "version-query": ".tag_name | sub(\"^v\"; \"\")",
+                        "url-query": ".assets[] | select(.name==\"protobuf-c-\" + $version + \".tar.gz\") | .browser_download_url"
+                    }
+                }
+            ]
+        },
         {
             "name": "gst-rtsp-server",
             "buildsystem": "meson",
@@ -52,6 +75,7 @@
                 "/bin",
                 "/sbin",
                 "/include",
+                "/lib/pkgconfig",
                 "/lib*/udev",
                 "/share/pkgconfig"
             ],
@@ -112,12 +136,13 @@
             "rm-configure": true,
             "cleanup": [
                 "/bin/*",
+                "/include",
                 "/etc/pam.d",
                 "/etc/dbus-1",
-                "/share/dbus-1/system-services/*",
-                "/share/polkit-1",
+                "/lib/pkgconfig",
                 "/lib/polkit-1",
-                "/include"
+                "/share/dbus-1/system-services/*",
+                "/share/polkit-1"
             ],
             "sources": [
                 {
@@ -164,13 +189,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/firewalld/firewalld/releases/download/v1.2.5/firewalld-1.2.5.tar.gz",
-                    "sha256": "b179dcff041ce4db50e28bfc98801678ff671d9c5e0de0e8f9baa045a2920292",
+                    "url": "https://github.com/firewalld/firewalld/releases/download/v1.3.1/firewalld-1.3.1.tar.bz2",
+                    "sha256": "7d8c848e30d885f89c7fbe049fd9a700a358f0e7ca8b353655f8614565c198e6",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/firewalld/firewalld/releases/latest",
                         "version-query": ".tag_name | sub(\"^v\"; \"\")",
-                        "url-query": ".assets[] | select(.name==\"firewalld-\" + $version + \".tar.gz\") | .browser_download_url"
+                        "url-query": ".assets[] | select(.name==\"firewalld-\" + $version + \".tar.bz2\") | .browser_download_url"
                     }
                 }
             ]
@@ -219,8 +244,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.freedesktop.org/NetworkManager/NetworkManager.git",
-                    "tag": "1.42.4",
-                    "commit": "a17d50be63958da590a46ba84032265d78636106",
+                    "tag": "1.42.6",
+                    "commit": "b6cc7c7e695ba3b1f2a5c95b0d6df418b8556e57",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
@@ -230,6 +255,10 @@
         },
         {
             "name": "libevent",
+            "cleanup": [
+                "/include",
+                "/lib/pkgconfig"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -247,9 +276,12 @@
             "name": "avahi",
             "cleanup": [
                 "/bin",
+                "/include",
                 "/lib/avahi",
+                "/lib/pkgconfig",
                 "/share/applications/*.desktop",
-                "/share/avahi"
+                "/share/avahi",
+                "/share/man"
             ],
             "config-opts": [
                 "--with-distro=none",
@@ -298,7 +330,7 @@
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/gnome-network-displays.git",
                     "branch": "master",
-                    "commit": "0e128d25c380b8755ead3811f2539017af5727fe"
+                    "commit": "ebd012ff1a456062adc8a6bf6e14243696ae08b0"
                 },
                 {
                     "type": "patch",
