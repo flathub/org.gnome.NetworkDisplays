@@ -164,13 +164,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/firewalld/firewalld/releases/download/v1.2.5/firewalld-1.2.5.tar.gz",
-                    "sha256": "b179dcff041ce4db50e28bfc98801678ff671d9c5e0de0e8f9baa045a2920292",
+                    "url": "https://github.com/firewalld/firewalld/releases/download/v1.3.1/firewalld-1.3.1.tar.bz2",
+                    "sha256": "7d8c848e30d885f89c7fbe049fd9a700a358f0e7ca8b353655f8614565c198e6",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/firewalld/firewalld/releases/latest",
                         "version-query": ".tag_name | sub(\"^v\"; \"\")",
-                        "url-query": ".assets[] | select(.name==\"firewalld-\" + $version + \".tar.gz\") | .browser_download_url"
+                        "url-query": ".assets[] | select(.name==\"firewalld-\" + $version + \".tar.bz2\") | .browser_download_url"
                     }
                 }
             ]
