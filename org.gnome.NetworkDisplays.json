@@ -75,6 +75,7 @@
                 "/bin",
                 "/sbin",
                 "/include",
+                "/lib/pkgconfig",
                 "/lib*/udev",
                 "/share/pkgconfig"
             ],
@@ -135,12 +136,13 @@
             "rm-configure": true,
             "cleanup": [
                 "/bin/*",
+                "/include",
                 "/etc/pam.d",
                 "/etc/dbus-1",
-                "/share/dbus-1/system-services/*",
-                "/share/polkit-1",
+                "/lib/pkgconfig",
                 "/lib/polkit-1",
-                "/include"
+                "/share/dbus-1/system-services/*",
+                "/share/polkit-1"
             ],
             "sources": [
                 {
@@ -253,6 +255,10 @@
         },
         {
             "name": "libevent",
+            "cleanup": [
+                "/include",
+                "/lib/pkgconfig"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -270,9 +276,12 @@
             "name": "avahi",
             "cleanup": [
                 "/bin",
+                "/include",
                 "/lib/avahi",
+                "/lib/pkgconfig",
                 "/share/applications/*.desktop",
-                "/share/avahi"
+                "/share/avahi",
+                "/share/man"
             ],
             "config-opts": [
                 "--with-distro=none",
