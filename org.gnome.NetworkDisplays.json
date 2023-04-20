@@ -219,8 +219,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.freedesktop.org/NetworkManager/NetworkManager.git",
-                    "tag": "1.42.4",
-                    "commit": "a17d50be63958da590a46ba84032265d78636106",
+                    "tag": "1.42.6",
+                    "commit": "b6cc7c7e695ba3b1f2a5c95b0d6df418b8556e57",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
@@ -298,7 +298,7 @@
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/gnome-network-displays.git",
                     "branch": "master",
-                    "commit": "0e128d25c380b8755ead3811f2539017af5727fe"
+                    "commit": "ebd012ff1a456062adc8a6bf6e14243696ae08b0"
                 },
                 {
                     "type": "patch",
