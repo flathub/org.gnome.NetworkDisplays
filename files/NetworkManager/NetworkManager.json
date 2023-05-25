@@ -1,0 +1,78 @@
+{
+  "modules": [
+    {
+      "name": "libndp",
+      "buildsystem": "autotools",
+      "cleanup": [
+        "/bin",
+        "/include",
+        "/lib/pkgconfig",
+        "/share/man"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/jpirko/libndp/archive/v1.8.tar.gz",
+          "sha256": "c3ea76e253def89869651686a827da75b56896fe94fabd87d8c14b1d4588fd05",
+          "x-checker-data": {
+            "type": "anitya",
+            "project-id": 14944,
+            "stable-only": true,
+            "url-template": "https://github.com/jpirko/libndp/archive/v$version.tar.gz"
+          }
+        }
+      ]
+    }
+  ],
+  "name": "NetworkManager",
+  "buildsystem": "meson",
+  "build-options": {
+    "cflags": "-ltinfo",
+    "cxxflags": "-ltinfo"
+  },
+  "config-opts": [
+    "-Dsystemdsystemunitdir=no",
+    "-Ddbus_conf_dir=/app/etc/dbus-1/system.d",
+    "-Diptables=/usr/bin/true",
+    "-Ddnsmasq=/usr/bin/true",
+    "-Dsession_tracking=no",
+    "-Dselinux=false",
+    "-Dsystemd_journal=false",
+    "-Dlibaudit=no",
+    "-Dwext=false",
+    "-Dwifi=true",
+    "-Dppp=false",
+    "-Dmodem_manager=false",
+    "-Dovs=false",
+    "-Dnmcli=false",
+    "-Dnmtui=false",
+    "-Dintrospection=false",
+    "-Dvapi=false",
+    "-Ddocs=false",
+    "-Dtests=no",
+    "-Dfirewalld_zone=false",
+    "-Dlibpsl=false",
+    "-Dqt=false"
+  ],
+  "cleanup": [
+    "/bin",
+    "/etc",
+    "/include",
+    "/lib/pkgconfig",
+    "/libexec",
+    "/sbin",
+    "/var"
+  ],
+  "sources": [
+    {
+      "type": "git",
+      "url": "https://gitlab.freedesktop.org/NetworkManager/NetworkManager.git",
+      "tag": "1.42.6",
+      "commit": "b6cc7c7e695ba3b1f2a5c95b0d6df418b8556e57",
+      "x-checker-data": {
+        "type": "git",
+        "tag-pattern": "^([\\d.]+)$"
+      }
+    }
+  ]
+}
