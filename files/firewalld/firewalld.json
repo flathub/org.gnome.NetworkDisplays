@@ -1,0 +1,39 @@
+{
+  "name": "firewalld",
+  "config-opts": [
+    "--disable-schemas-compile",
+    "--disable-docs",
+    "--disable-systemd",
+    "--disable-nls",
+    "--without-iptables",
+    "--without-iptables-restore",
+    "--without-ip6tables",
+    "--without-ip6tables-restore",
+    "--without-ebtables",
+    "--without-ebtables-restore",
+    "--without-ipset",
+    "--with-python_prefix=/app",
+    "--with-python_exec_prefix=/app"
+  ],
+  "cleanup": [
+    "/bin",
+    "/etc",
+    "/include",
+    "/lib/pkgconfig",
+    "/share",
+    "/sbin"
+  ],
+  "sources": [
+    {
+      "type": "archive",
+      "url": "https://github.com/firewalld/firewalld/releases/download/v1.3.2/firewalld-1.3.2.tar.bz2",
+      "sha256": "aba0d8ce9617b906ea4866bf0bdfb2c2d5312f53b8e9e8e9e4d49bf330da5b5e",
+      "x-checker-data": {
+        "type": "json",
+        "url": "https://api.github.com/repos/firewalld/firewalld/releases/latest",
+        "version-query": ".tag_name | sub(\"^v\"; \"\")",
+        "url-query": ".assets[] | select(.name==\"firewalld-\" + $version + \".tar.bz2\") | .browser_download_url"
+      }
+    }
+  ]
+}
