@@ -32,10 +32,15 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/gnome-network-displays.git",
-                    "branch": "master",
-                    "commit": "6604a1e8da3fca0100a4aab6a264659491cbc182"
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/gnome-network-displays/0.91/gnome-network-displays-0.91.0.tar.xz",
+                    "sha256": "618b8c346c2dc3b4e31f78bf91e1001e1795630f6c6a320b00d36a1018883a94",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "gnome-network-displays",
+                        "is-main-source": true,
+                        "stable-only": true
+                    }
                 },
                 {
                     "type": "patch",
