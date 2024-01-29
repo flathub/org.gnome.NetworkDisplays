@@ -25,6 +25,7 @@
         "files/gst-rtsp-server/gst-rtsp-server.json",
         "files/libprotobuf-c/libprotobuf-c.json",
         "files/NetworkManager/NetworkManager.json",
+        "files/libportal/libportal.json",
         {
             "name": "gnome-network-displays",
             "buildsystem": "meson",
@@ -34,8 +35,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-network-displays/0.91/gnome-network-displays-0.91.0.tar.xz",
-                    "sha256": "618b8c346c2dc3b4e31f78bf91e1001e1795630f6c6a320b00d36a1018883a94",
+                    "url": "https://download.gnome.org/sources/gnome-network-displays/0.92/gnome-network-displays-0.92.1.tar.xz",
+                    "sha256": "6a81fd4a90fb01f33a73a9a83020ae4358a091caca82a01fd622e5a6e5ed6a27",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-network-displays",
