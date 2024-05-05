@@ -35,8 +35,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-network-displays/0.92/gnome-network-displays-0.92.1.tar.xz",
-                    "sha256": "6a81fd4a90fb01f33a73a9a83020ae4358a091caca82a01fd622e5a6e5ed6a27",
+                    "url": "https://download.gnome.org/sources/gnome-network-displays/0.92/gnome-network-displays-0.92.2.tar.xz",
+                    "sha256": "75fdf95099d1a25552898700ae99eb825c4d29b4ca0372c01ac37094317b723e",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-network-displays",
