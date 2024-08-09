@@ -43,10 +43,6 @@
                         "is-main-source": true,
                         "stable-only": true
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/gnome-network-displays/warn-about-host-requirements-in-appdata.patch"
                 }
             ]
         }
