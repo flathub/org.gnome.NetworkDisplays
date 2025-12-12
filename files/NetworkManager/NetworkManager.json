@@ -69,8 +69,8 @@
         {
             "type": "git",
             "url": "https://gitlab.freedesktop.org/NetworkManager/NetworkManager.git",
-            "tag": "1.54.2",
-            "commit": "dc3beb479fc07fbdf43b148f529b21a6474e52a1",
+            "tag": "1.54.3",
+            "commit": "8caccc6bed0b56528ef3d880af1c217bb8d24419",
             "x-checker-data": {
                 "type": "git",
                 "tag-pattern": "^([\\d.]+)$"
