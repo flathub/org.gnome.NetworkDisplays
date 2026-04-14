@@ -49,6 +49,7 @@
         "-Dintrospection=false",
         "-Dvapi=false",
         "-Ddocs=false",
+        "-Dman=false",
         "-Dtests=no",
         "-Dfirewalld_zone=false",
         "-Dlibpsl=false",
