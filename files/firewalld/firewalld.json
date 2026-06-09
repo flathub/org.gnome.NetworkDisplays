@@ -26,8 +26,8 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://github.com/firewalld/firewalld/releases/download/v2.4.1/firewalld-2.4.1.tar.bz2",
-            "sha256": "453230c49b961853144dd7614d59e82fafbcc52c314c39ec66d1316274a33001",
+            "url": "https://github.com/firewalld/firewalld/releases/download/v2.4.2/firewalld-2.4.2.tar.bz2",
+            "sha256": "1917b5d77d3c1106c425d49be568bb0728130a5a08766b11c979874fe4f61bc6",
             "x-checker-data": {
                 "type": "json",
                 "url": "https://api.github.com/repos/firewalld/firewalld/releases/latest",
