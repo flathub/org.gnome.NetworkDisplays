@@ -23,7 +23,7 @@
         "files/gst-rtsp-server/gst-rtsp-server.json",
         "files/libprotobuf-c/libprotobuf-c.json",
         "files/NetworkManager/NetworkManager.json",
-        "files/libportal/libportal.json",
+        "shared-modules/libportal/libportal.json",
         {
             "name": "gnome-network-displays",
             "buildsystem": "meson",
