@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.NetworkDisplays",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "49",
+    "runtime-version": "51",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-network-displays",
     "finish-args": [
@@ -23,7 +23,6 @@
         "files/gst-rtsp-server/gst-rtsp-server.json",
         "files/libprotobuf-c/libprotobuf-c.json",
         "files/NetworkManager/NetworkManager.json",
-        "files/libportal/libportal.json",
         {
             "name": "gnome-network-displays",
             "buildsystem": "meson",
