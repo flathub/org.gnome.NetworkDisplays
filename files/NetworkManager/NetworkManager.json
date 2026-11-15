@@ -45,6 +45,7 @@
         "-Dppp=false",
         "-Dmodem_manager=false",
         "-Dovs=false",
+        "-Dclat=false",
         "-Dnmcli=false",
         "-Dnmtui=false",
         "-Dintrospection=false",
